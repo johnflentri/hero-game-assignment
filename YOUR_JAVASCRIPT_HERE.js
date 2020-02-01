@@ -31,14 +31,14 @@ function bag(person) {
 }
 
 function changeName() {
-  prompt("Enter your hero name!")
+  hero.name = prompt("Enter your hero name!")
 }
 
 function displayStats() {
   const dataSection = document.getElementById("heroData")
-  const p = document.createElement('p')
-  p.innerHTML = (`Your is called ${hero.name}. He/She has ${hero.health} health and has a ${hero.weapon.type} that deals ${hero.weapon.damage} damage.`)
-  dataSection.appendChild(p)
+  const statsPara = document.getElementById('statsPara')
+  statsPara.innerHTML = (`Your hero is called ${hero.name}. He/She has ${hero.health} health and has a ${hero.weapon.type} that deals ${hero.weapon.damage} damage.`)
+  dataSection.appendChild(statsPara)
 }
 
 
