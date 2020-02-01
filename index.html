@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <title>Mocha Tests</title>
   <link href="lib/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <img id="inn" onclick="rest(hero)" src="images/inn.png">
-  <img id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
-  <img id="bag" onclick="bag(hero)" src="images/inventory.png">
-
+  <div>
+    <img class="img" id="inn" onclick="rest(hero)" src="images/inn.png">
+    <img class="img" id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
+    <img class="img" id="bag" onclick="bag(hero)" src="images/inventory.png">
+  </div>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
