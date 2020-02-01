@@ -12,6 +12,9 @@
   <div id="heroData">
     <button onclick="changeName()">Change hero name</button>
     <p id="statsPara"></p>
+    <button onclick="howToWin()">How to win (SPOILER!!)</button>
+    <p id="howToWin"></p>
+    <p>Defeat Lord Farquaad to win, bonus points if you can take out Prince Charming!</p>
   </div>
   <br>
   <div>
@@ -19,8 +22,9 @@
     <img class="img" id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
     <img class="img" id="bag" onclick="bag(hero)" src="images/inventory.png">
   </div>
-  <div>
-    <img class="img" id="enemyFarquaad" onclick="fightEnemy()" src="images/lordFarquaad.png">
+  <div id="enemyTerritory">
+    <img class="img" id="villain1" onclick="fightEnemy(villain1)" src="images/princeCharming.png">
+    <img class="img" id="villain2" onclick="fightEnemy(villain2)" src="images/lordFarquaad.png">
   </div>
   <br>
 
