@@ -9,11 +9,17 @@
 </head>
 
 <body>
+  <div id="heroData">
+    <button onclick="changeName()">Choose your hero name</button>
+    <button onclick="displayStats()">Display hero stats</button>
+  </div>
+  <br>
   <div>
     <img class="img" id="inn" onclick="rest(hero)" src="images/inn.png">
     <img class="img" id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
     <img class="img" id="bag" onclick="bag(hero)" src="images/inventory.png">
   </div>
+  <br>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
