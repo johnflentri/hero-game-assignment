@@ -10,8 +10,7 @@
 
 <body>
   <div id="heroData">
-    <button onclick="changeName()">Choose your hero name</button>
-    <button onclick="displayStats()">Display hero stats</button>
+    <button onclick="changeName()">Change hero name</button>
     <p id="statsPara"></p>
   </div>
   <br>
@@ -19,6 +18,9 @@
     <img class="img" id="inn" onclick="rest(hero)" src="images/inn.png">
     <img class="img" id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
     <img class="img" id="bag" onclick="bag(hero)" src="images/inventory.png">
+  </div>
+  <div>
+    <img class="img" id="enemyFarquaad" onclick="fightEnemy()" src="images/lordFarquaad.png">
   </div>
   <br>
 
