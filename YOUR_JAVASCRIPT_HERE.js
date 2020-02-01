@@ -16,4 +16,16 @@ function pickUpItem(person, weapon) {
   return person
 }
 
-function equipWeapon() { }
+function equipWeapon(person) {
+  if (person.inventory.length === 0) {
+    return null
+  } else {
+    person.weapon = person.inventory[0]
+    return person
+  }
+}
+
+function bag(person) {
+  equipWeapon(person)
+  return person
+}
