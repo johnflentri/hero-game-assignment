@@ -1,21 +1,21 @@
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>Mocha Tests</title>
-    <link href="lib/mocha.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="lib/mocha.css" rel="stylesheet" />
 </head>
+
 <body>
-
-
-  <!-- 👍 YOUR HTML HERE 👍 -->
-
+  <img id="inn" onclick="rest(hero)" src="images/inn.png">
+  <img id="dagger" onclick="pickUpItem(hero, weapon)" src="images/dagger.png">
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
 
   <div id="mocha">
-  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+    <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
   </div>
 
   <script src="lib/chai.js"></script>
@@ -26,4 +26,5 @@
   <script src="lib/game_logic.test.js"></script>
 
 </body>
+
 </html>
